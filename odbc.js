@@ -4,7 +4,7 @@ module.exports = function(RED) {
 
 	function connection(config) {
 	    RED.nodes.createNode(this, config);
-		this.connection = `${config.connection};UID=${confi.username};PWD=${config.password}`;
+		this.connection = `${config.connection};UID=${config.username};PWD=${config.password}`;
 	}
 	
   	RED.nodes.registerType("ODBC_CONNECTION", connection, {
